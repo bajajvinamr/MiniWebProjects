@@ -17,7 +17,10 @@ Create Poll
   <app-poll-create *ngIf="showForm"></app-poll-create>
   <div class="d-flex">
   <div class="container poll-list">
-    List
+    <app-poll
+    [question]="poll.question"
+    [voted]="poll.voted"
+    [votes]="poll.votes"></app-poll>
   </div>
 
   <div class="container poll-detail">

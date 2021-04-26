@@ -1,1 +1,14 @@
-<p>poll works!</p>
+<div class="card mb-4">
+  <div class="poll-image">
+      <img [src]="image" alt="Sports">
+  </div>
+  <div class="card-body">
+    <p class="card-text text-truncate font-weight-bold">
+        {{ question }}
+    </p>
+    <div class="d-flex justify-content-between">
+      <small class="text-muted">{{numberOfVotes}}</small>
+      <small *ngIf="voted" class="text-info"> voted </small>
+    </div>
+  </div>
+</div>
