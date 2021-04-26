@@ -20,6 +20,11 @@ export class PollCreateComponent {
 
 
   }
+  submitForm()
+    {
+      console.log(this.pollForm.value);
+
+    }
 }
 
 
